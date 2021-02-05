@@ -1,0 +1,49 @@
+Visualizacion de datos
+
+https://docs.google.com/spreadsheets/d/1_Yt2gY-NH02Dc0TVQs1wtxdgX5JUmdJ5-Fp21cf2whQ/edit?ts=5f933f1d#gid=0
+
+https://cano19781.github.io/infovis/index.html
+
+
+......................................................................................................................
+Querys
+
+SELECT measure, MIN(value), MAX(value) FROM dp_live_18102020154144776 group by measure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+......................................................................................................................
+
+
+Variables de Tablaou
+
+IF [Location] = 'USA' THEN
+  'USA'
+ELSE 
+  ''
+END
+
+......................................................................................................................
+
+LOOKUP(ZN(SUM([Value])) - LOOKUP(ZN(SUM([Value]))),LAST())
+
+
+
+LOOKUP(
+ZN(SUM([Value])) - LOOKUP(ZN(SUM([Value])))
+,LAST())
+
+......................................................................................................................
